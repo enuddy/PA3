@@ -64,7 +64,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="agent.cpp" />
     <ClCompile Include="pa3.cpp" />
+    <ClCompile Include="person.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="login.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="agent.h" />
+    <ClInclude Include="header.h" />
+    <ClInclude Include="person.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
