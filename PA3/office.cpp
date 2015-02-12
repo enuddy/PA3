@@ -48,7 +48,31 @@ int Office::getTotalTenants()
 {
    int tenant = 0;
 
-   // loop through all the apartments and collect their tenant amount. TODO
-
+   // add the amount of tenants in each apartment to the counter.
+   for (size_t i = 0; i < apartments.size(); i++)
+      tenant += apartments[i].getTotalTenants();
+   
    return tenant;
+}
+
+
+/*
+* Pre: Valid apartment object
+*
+* Post: Returns false if we cannot add more apartments to this office. 
+*       Returns true if we can add the apartment, then adds the apartment.
+*
+* Purpose: To attempt to add an apartment to the vector
+*/
+bool Office::addApartment(Apartment apart)
+{
+   // validate if we can add more apartments to this office.
+   if (getTotalApartments() + 1 >= MAX_APARTMENTS)
+      return false;
+   else
+   {
+      // add the apartment to the array, return true for valid entry
+      apartments.push_back(apart);
+      return true;
+   }
 }

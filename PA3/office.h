@@ -6,6 +6,7 @@
 
 #include "agent.h"
 #include "apartment.h"
+#include "tenant.h"
 
 using namespace std;
 
@@ -43,9 +44,10 @@ public:
    
    int getTotalTenants();
 
-   
-
    // Mutators
+
+   bool addApartment(Apartment apart);
+
 
    // Misc.
 

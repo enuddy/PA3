@@ -30,6 +30,9 @@
     <ClCompile Include="apartment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tenant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="login.txt">
@@ -56,6 +59,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="apartment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tenant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

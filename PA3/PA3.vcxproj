@@ -69,6 +69,7 @@
     <ClCompile Include="office.cpp" />
     <ClCompile Include="pa3.cpp" />
     <ClCompile Include="person.cpp" />
+    <ClCompile Include="tenant.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="apartments.txt" />
@@ -81,6 +82,7 @@
     <ClInclude Include="header.h" />
     <ClInclude Include="office.h" />
     <ClInclude Include="person.h" />
+    <ClInclude Include="tenant.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
