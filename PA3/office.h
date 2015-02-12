@@ -51,6 +51,8 @@ public:
 
    // Misc.
 
+   void loadOffice();
+
 
 
 };
