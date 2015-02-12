@@ -24,9 +24,21 @@
     <ClCompile Include="agent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="office.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apartment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="login.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="tenants.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="apartments.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
@@ -38,6 +50,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="agent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="office.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apartment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

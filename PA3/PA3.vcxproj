@@ -65,15 +65,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="agent.cpp" />
+    <ClCompile Include="apartment.cpp" />
+    <ClCompile Include="office.cpp" />
     <ClCompile Include="pa3.cpp" />
     <ClCompile Include="person.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="apartments.txt" />
     <Text Include="login.txt" />
+    <Text Include="tenants.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="agent.h" />
+    <ClInclude Include="apartment.h" />
     <ClInclude Include="header.h" />
+    <ClInclude Include="office.h" />
     <ClInclude Include="person.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

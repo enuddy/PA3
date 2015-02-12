@@ -1,7 +1,9 @@
 #ifndef AGENT_H
 #define AGENT_H
 
-class Agent
+#include "person.h"
+
+class Agent : Person
 {
 
 public:
