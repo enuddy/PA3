@@ -19,6 +19,8 @@ private:
 public:
 
    Apartment();
+   Apartment(string id, string address, int roomNumber, int maxTenant,
+             double monthlyRental);
    ~Apartment();
 
    // accessors
@@ -31,6 +33,8 @@ public:
 
 
    // misc
+
+
 };
 
 #endif

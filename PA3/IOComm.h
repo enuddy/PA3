@@ -27,6 +27,8 @@ public:
 
    string getAlphaResponse();
 
+   string getAlphaResponse(bool spaces);
+
    string getAlphaResponseOr(const char otherkeys[], int size);
 
    char getCharResponse(const char options[], int optionSize);

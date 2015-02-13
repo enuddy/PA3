@@ -3,10 +3,12 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 
 #include "agent.h"
 #include "apartment.h"
 #include "tenant.h"
+#include "IOComm.h"
 
 using namespace std;
 
@@ -32,6 +34,8 @@ private:
    /* The vector to store all the agents in the office. */
    vector<Agent> agents;
 
+   IOComm io;
+
 public:
    Office();
    ~Office();
@@ -46,14 +50,14 @@ public:
 
    // Mutators
 
-   bool addApartment(Apartment apart);
+   bool addApartment();
 
 
    // Misc.
 
    void loadOffice();
 
-
+   string promptAddress();
 
 };
 

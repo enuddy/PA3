@@ -56,7 +56,6 @@ string IOComm::getAlphaNumericResponse()
 {
    string response = "";
    char entered = ' ';
-   cout << ">";
 
    entered = _getch();
    while (entered != ENTER_KEY_VALUE)
@@ -94,7 +93,6 @@ string IOComm::getAlphaNumericResponseOr(const char otherKeys[], int size)
 {
    string response = "";
    char entered = ' ';
-   cout << ">";
 
    // get an initial value.
    entered = _getch();
@@ -144,7 +142,6 @@ string IOComm::getAlphaResponse()
 {
    string response = "";
    char entered = ' ';
-   cout << ">";
 
    entered = _getch();
    while (entered != ENTER_KEY_VALUE)
@@ -169,6 +166,19 @@ string IOComm::getAlphaResponse()
 }
 
 
+string IOComm::getAlphaNumeric(bool spaces)
+{
+   string response = " ";
+
+   if (spaces)
+   {
+      
+   }
+
+   return response;
+}
+
+
 /*
 * Pre: otherKeys is populated with values, size = the length of otherKeys[]
 *
@@ -182,7 +192,6 @@ string IOComm::getAlphaResponseOr(const char otherKeys[], int size)
 {
    string response = "";
    char entered = ' ';
-   cout << ">";
 
    // get an initial value.
    entered = _getch();
@@ -233,7 +242,6 @@ char IOComm::getCharResponse(const char options[], int optionSize)
 {
    string letter = ""; // string to make it easier to check values.
    char input = ' ';
-   cout << ">";
    input = _getch();
 
    while (input != ENTER_KEY_VALUE || letter.length() == 0)
