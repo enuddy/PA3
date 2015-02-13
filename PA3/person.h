@@ -3,25 +3,27 @@
 
 class Person
 {
-
-   +Person();
-   +Person(string id, string name, string phoneNum);
-   +~Person();
+   private: 
+      string mId, mName, mPhoneNumber;
+   public:
+      Person();
+      Person(string id, string name, string phoneNum);
+      ~Person();
+      
+      getID(): string
+      getName(): string
+      getPhoneNumber(): string
+      
+      setId(string id): void
+      setName(string name): void
+      setPhoneNumber(string phoneNumber): void
+      
+      operator==(string id): bool
+      operator==(Person rhs): bool
    
-   +getID(): string
-   +getName(): string
-   +getPhoneNumber(): string
-   
-   +setId(string id): void
-   +setName(string name): void
-   +setPhoneNumber(string phoneNumber): void
-   
-   + operator==(string id): bool
-   + operator==(Person rhs): bool
-   
-   friend operator==(string lhs, Person rhs): bool
-   friend operator<<(ostream& output, Person& obj): ostream&
-   friend operator>>(istream& input, Person& obj): istream&
+      friend operator==(string lhs, Person rhs): bool
+      friend operator<<(ostream& output, Person& obj): ostream&
+      friend operator>>(istream& input, Person& obj): istream&
 };
 
 #endif
