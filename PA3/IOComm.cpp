@@ -166,13 +166,26 @@ string IOComm::getAlphaResponse()
 }
 
 
-string IOComm::getAlphaNumeric(bool spaces)
+/*
+* Pre: bool on whether you want spaces or not
+*
+* Post: A string containing only letters is returned. and spaces if space = true
+*
+* Purpose: To only accept letters as a response, then to make those into a
+*          string and return the value. Includes spaces if bool is true.
+*/
+string IOComm::getAlphaResponse(bool spaces)
 {
    string response = " ";
 
    if (spaces)
    {
-      
+      char space[] = {' '};
+      response = getAlphaResponseOr(space, 1);
+   }
+   else
+   {
+      response = getAlphaResponse();
    }
 
    return response;
