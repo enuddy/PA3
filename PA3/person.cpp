@@ -19,50 +19,42 @@ Person::~Person()
 {
 }
 
-Person::string getId()
+string Person::getID()
 {
   return mId;
 }
 
-Person::string getName()
+string Person::getName()
 {
   return mName;
 }
 
-Person::string getPhoneNumber()
+string Person::getPhoneNumber()
 {
   return mPhoneNumber;
 }
 
-Person::void setID(string newId)
+void Person::setID(string newId)
 {
   mId = newId;
 }
 
-Person::void setname(string newName)
+void Person::setName(string newName)
 {
   mName = newName;
 }
 
-Person::void setPhoneNumber(string newPhone)
+void Person::setPhoneNumber(string newPhone)
 {
   mPhoneNumber = newPhone;
 }
 
-Person::bool operator==(string id)
+bool Person::operator==(string id)
 {
   return mId == id;
 }
 
-Person::bool operator==(Person rhs)
+bool Person::operator==(Person rhs)
 {
   return mId == rhs.mId;
-}
-
-}
-}
-}
-}
-}
-}
 }

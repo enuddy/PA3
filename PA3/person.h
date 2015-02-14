@@ -1,6 +1,10 @@
 #ifndef PERSON_H
 #define PERSON_H
 
+#include <string>
+
+using namespace std;
+
 class Person
 {
    private: 
@@ -10,20 +14,20 @@ class Person
       Person(string id, string name, string phoneNum);
       ~Person();
       
-      getID(): string
-      getName(): string
-      getPhoneNumber(): string
+      string getID();
+      string getName();
+      string getPhoneNumber();
       
-      setId(string id): void
-      setName(string name): void
-      setPhoneNumber(string phoneNumber): void
+      void setID(string id);
+      void setName(string name);
+      void setPhoneNumber(string phoneNumber);
       
-      operator==(string id): bool
-      operator==(Person rhs): bool
+      bool operator==(string id);
+      bool operator==(Person rhs);
    
-      friend operator==(string lhs, Person rhs): bool
-      friend operator<<(ostream& output, Person& obj): ostream&
-      friend operator>>(istream& input, Person& obj): istream&
+      friend bool operator==(string lhs, Person rhs);
+      friend ostream& operator<<(ostream& output, Person& obj);
+      friend istream& operator>>(istream& input, Person& obj);
 };
 
 #endif
