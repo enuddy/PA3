@@ -76,6 +76,8 @@ bool Office::addApartment()
       
 
       // add the apartment to the array, return true for valid entry
+      string address = promptAddress();
+
       //apartments.push_back();
       return true;
    }
